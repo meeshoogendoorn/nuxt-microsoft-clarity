@@ -1,11 +1,10 @@
-import { defineNuxtConfig } from 'nuxt/config'
-import MyModule from '..'
+import { defineNuxtConfig } from 'nuxt/config';
+import MyModule from '..';
 
 export default defineNuxtConfig({
-  modules: [
-    MyModule
-  ],
-  myModule: {
-    addPlugin: true
-  }
-})
+  modules: ['nuxt-microsoft-clarity'],
+  clarity: {
+    delay: 1,
+    key: 'YOUR_CLARITY_KEY',
+  },
+});
